@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ory-keto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ory-keto
+  template:
+    metadata:
+      labels:
+        app: ory-keto
+    spec:
+      containers:
+        - name: ory-keto
+          image: ghcr.io/toandos/keto:latest
+          ports:
+            - name: read
+              containerPort: 4466
+          env:
+            - name: DSN
+              value: postgres://keto:keto_password@postgres:5432/keto?sslmode=disable
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "1"
+              memory: "1Gi"

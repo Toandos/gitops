@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ory-hydra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ory-hydra
+  template:
+    metadata:
+      labels:
+        app: ory-hydra
+    spec:
+      containers:
+        - name: ory-hydra
+          image: ghcr.io/toandos/hydra:latest
+          ports:
+            - name: http
+              containerPort: 4444
+          env:
+            - name: DSN
+              value: postgres://hydra:hydra_password@postgres:5432/hydra?sslmode=disable
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "1"
+              memory: "1Gi"

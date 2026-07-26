@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ory-kratos
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ory-kratos
+  template:
+    metadata:
+      labels:
+        app: ory-kratos
+    spec:
+      containers:
+        - name: ory-kratos
+          image: ghcr.io/toandos/kratos:latest
+          ports:
+            - name: http
+              containerPort: 4433
+          env:
+            - name: DSN
+              value: postgres://kratos:kratos_password@postgres:5432/kratos?sslmode=disable
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "1"
+              memory: "1Gi"
