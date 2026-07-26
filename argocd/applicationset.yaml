@@ -6,10 +6,10 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/Toandos/platform.git
+        repoURL: https://github.com/Toandos/gitops.git
         revision: main
         directories:
-          - path: k8s/**/*
+          - path: namespaces/**/*
 
   template:
     metadata:
@@ -18,13 +18,13 @@ spec:
       project: default
 
       source:
-        repoURL: https://github.com/Toandos/platform.git
+        repoURL: https://github.com/Toandos/gitops.git
         targetRevision: main
         path: '{{path}}'
 
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path.basename}}'
+        namespace: '{{path[1]}}'
 
       syncPolicy:
         automated:
