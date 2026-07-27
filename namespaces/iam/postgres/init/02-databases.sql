@@ -1,0 +1,3 @@
+CREATE DATABASE hydra OWNER hydra;
+CREATE DATABASE kratos OWNER kratos;
+CREATE DATABASE keto OWNER keto;
