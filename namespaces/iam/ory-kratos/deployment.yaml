@@ -12,9 +12,19 @@ spec:
       labels:
         app: ory-kratos
     spec:
+      volumes:
+        - name: kratos-config
+          configMap:
+            name: kratos-config
       containers:
         - name: ory-kratos
-          image: ghcr.io/toandos/kratos:latest
+          image: oryd/kratos:v26.2
+          args: ["serve", "--config", "/etc/config/kratos.yml"]
+          volumeMounts:
+            - name: kratos-config
+              mountPath: /etc/config
+              readOnly: true
+
           ports:
             - name: http
               containerPort: 4433
