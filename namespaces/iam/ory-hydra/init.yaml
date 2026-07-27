@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hydra-init
+spec:
+  backoffLimit: 3
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: hydra-init
+          image: oryd/hydra:v26.2
+          command: ["/bin/sh", "/etc/init/init.sh"]
+          volumeMounts:
+            - name: hydra-config
+              mountPath: /etc/config
+              readOnly: true
+            - name: hydra-init
+              mountPath: /etc/init
+              readOnly: true
+      volumes:
+        - name: hydra-config
+          configMap:
+            name: hydra-config
+        - name: hydra-init
+          configMap:
+            name: hydra-init

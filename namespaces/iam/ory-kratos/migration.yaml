@@ -11,19 +11,10 @@ spec:
         - name: kratos-migrate
           image: oryd/kratos:v26.2
           args: ["migrate", "sql", "-e", "--yes", "--config", "/etc/config/kratos.yml"]
-
-          env:
-            - name: DSN
-              valueFrom:
-                secretKeyRef:
-                  name: kratos-secrets
-                  key: dsn
-
           volumeMounts:
             - name: kratos-config
               mountPath: /etc/config
               readOnly: true
-
       volumes:
         - name: kratos-config
           configMap:

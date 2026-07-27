@@ -1,0 +1,17 @@
+dsn: postgres://hydra:hydra_password@postgres:5432/hydra?sslmode=disable
+
+serve:
+    public:
+        port: 4444
+    admin:
+        port: 4445
+
+urls:
+    self:
+        public: https://oauth.toando.de
+        issuer: https://oauth.toando.de
+    login: https://accounts.toando.de/login
+    consent: https://accounts.toando.de/consent
+
+secrets:
+    system: ["UF0DWLdx4ZmWyHuw6t7RUqXNl9S7DT10"]

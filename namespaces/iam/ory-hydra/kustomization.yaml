@@ -2,6 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
+  - init.yaml
   - deployment.yaml
   - service.yaml
   - httproute.yaml
+
+configMapGenerator:
+  - name: hydra-config
+    files: ["config/hydra.yaml"]
+  - name: hydra-init
+    files: ["init/*.sh"]

@@ -1,3 +1,5 @@
+dsn: postgres://kratos:kratos_password@postgres:5432/kratos?sslmode=disable
+
 serve:
     public:
         base_url: https://accounts.toando.de/api/
