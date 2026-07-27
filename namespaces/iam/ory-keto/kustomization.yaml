@@ -4,3 +4,9 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+
+configMapGenerator:
+  - name: keto-config
+    files: ["config/keto.yaml"]
+  - name: keto-namespaces
+    files: ["namespaces/*.ts"]

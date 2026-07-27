@@ -1,0 +1,7 @@
+dsn: postgres://keto:keto_password@postgres:5432/keto?sslmode=disable
+
+serve:
+    read:
+        port: 4466
+
+namespaces: file:///etc/keto/namespaces

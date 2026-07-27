@@ -12,15 +12,27 @@ spec:
       labels:
         app: ory-keto
     spec:
+      volumes:
+        - name: keto-config
+          configMap:
+            name: keto-config
+        - name: keto-namespaces
+          configMap:
+            name: keto-namespaces
       containers:
         - name: ory-keto
-          image: ghcr.io/toandos/keto:latest
+          image: oryd/keto:v26.2
+          args: ["serve", "--config", "/etc/config/keto.yml"]
+          volumeMounts:
+            - name: keto-config
+              mountPath: /etc/config
+              readOnly: true
+            - name: keto-namespaces
+              mountPath: /etc/config
+              readOnly: true
           ports:
             - name: read
               containerPort: 4466
-          env:
-            - name: DSN
-              value: postgres://keto:keto_password@postgres:5432/keto?sslmode=disable
           resources:
             requests:
               cpu: "100m"
