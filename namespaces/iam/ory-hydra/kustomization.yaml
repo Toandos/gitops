@@ -11,4 +11,4 @@ configMapGenerator:
   - name: hydra-config
     files: ["config/hydra.yaml"]
   - name: hydra-init
-    files: ["init/*.sh"]
+    files: ["init/init.sh"]

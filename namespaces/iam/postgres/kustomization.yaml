@@ -8,4 +8,4 @@ resources:
 
 configMapGenerator:
   - name: postgres-init
-    files: ["init/*.sql"]
+    files: ["init/01-users.sql", "init/02-databases.sql"]

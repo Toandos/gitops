@@ -9,4 +9,4 @@ configMapGenerator:
   - name: keto-config
     files: ["config/keto.yaml"]
   - name: keto-namespaces
-    files: ["namespaces/*.ts"]
+    files: ["namespaces"]
