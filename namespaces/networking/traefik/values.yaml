@@ -1,6 +1,9 @@
 service:
     enabled: false
 
+gateway:
+    enabled: false
+
 deployment:
     kind: DaemonSet
 
@@ -13,7 +16,7 @@ ports:
         port: 443
         hostPort: 443
         exposedPort: 443
-        
+
 providers:
     kubernetesIngress:
         enabled: false
