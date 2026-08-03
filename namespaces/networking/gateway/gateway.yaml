@@ -2,8 +2,6 @@ apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:
   name: public-gateway
-  annotations:
-    traefik.io/router.tls.certresolver: le
 spec:
   gatewayClassName: traefik
 
@@ -13,6 +11,8 @@ spec:
       port: 443
       tls:
         mode: Terminate
+        certificateRefs:
+          - name: toando-de-tls
       allowedRoutes:
         namespaces:
           from: All
