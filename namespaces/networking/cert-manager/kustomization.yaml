@@ -1,8 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: networking
-
 helmCharts:
   - name: cert-manager
     repo: https://charts.jetstack.io
@@ -10,8 +8,3 @@ helmCharts:
     namespace: networking
     releaseName: cert-manager
     includeCRDs: true
-
-resources:
-  - cloudflare-api-token.yaml
-  - cluster-issuer.yaml
-  - toando-de-certificate.yaml
