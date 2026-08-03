@@ -15,3 +15,18 @@ providers:
         enabled: false
     kubernetesGateway:
         enabled: true
+
+certificatesResolvers:
+    le:
+        acme:
+            email: admin@toando.de
+            storage: /etc/letsencrypt/acme.json
+            dnsChallenge:
+                provider: cloudflare
+            
+env:
+  - name: CF_DNS_API_TOKEN
+    value: "cfat_1CV9xOVP4crHVpnfUCglfZRWFEP4IFUxgOh0Z4fR2fdcaba4"
+
+persistence:
+  enabled: true

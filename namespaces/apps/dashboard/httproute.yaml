@@ -5,7 +5,7 @@ metadata:
 spec:
   parentRefs:
     - name: public-gateway
-      namespace: traefik
+      namespace: networking
 
   hostnames:
     - dash.toando.de

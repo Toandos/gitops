@@ -5,7 +5,7 @@ metadata:
 spec:
   parentRefs:
     - name: public-gateway
-      namespace: traefik
+      namespace: networking
 
   hostnames:
     - oauth.toando.de
