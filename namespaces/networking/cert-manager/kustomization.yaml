@@ -8,3 +8,6 @@ helmCharts:
     namespace: networking
     releaseName: cert-manager
     includeCRDs: true
+    valuesInline:
+      crds:
+        enabled: true
