@@ -12,6 +12,8 @@ spec:
       labels:
         app: dashboard
     spec:
+      imagePullSecrets:
+        - name: dashboard-ghcr-secret
       containers:
         - name: dashboard
           image: ghcr.io/toandos/dashboard:latest

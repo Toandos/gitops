@@ -12,6 +12,8 @@ spec:
       labels:
         app: website
     spec:
+      imagePullSecrets:
+        - name: website-ghcr-secret
       containers:
         - name: website
           image: ghcr.io/toandos/website:latest
