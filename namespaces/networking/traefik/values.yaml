@@ -1,3 +1,6 @@
+service:
+    enabled: false
+
 deployment:
     kind: DaemonSet
 
