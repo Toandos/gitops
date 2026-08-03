@@ -5,7 +5,7 @@ namespace: networking
 
 helmCharts:
   - name: cert-manager
-    repo: oci://quay.io/jetstack/charts/cert-manager
+    repo: https://charts.jetstack.io
     version: v1.21.1
     namespace: networking
     releaseName: cert-manager
