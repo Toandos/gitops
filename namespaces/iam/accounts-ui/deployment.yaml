@@ -12,6 +12,8 @@ spec:
       labels:
         app: accounts-ui
     spec:
+      imagePullSecrets:
+        - name: accounts-ui-ghcr-secret
       containers:
         - name: accounts-ui
           image: ghcr.io/toandos/accounts-ui:latest
