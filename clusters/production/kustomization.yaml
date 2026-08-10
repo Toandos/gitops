@@ -1,5 +1,3 @@
 resources:
-  - "../../namespaces/apps"
-  - "../../namespaces/cert-manager"
-  - "../../namespaces/iam"
-  - "../../namespaces/networking"
+  - "../../apps"
+  - "../../infrastructure"
