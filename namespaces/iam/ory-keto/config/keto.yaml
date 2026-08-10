@@ -4,4 +4,4 @@ serve:
     read:
         port: 4466
 
-namespaces: file:///etc/keto/namespaces
+namespaces: file:///etc/namespaces

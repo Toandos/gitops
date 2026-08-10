@@ -28,7 +28,7 @@ spec:
               mountPath: /etc/config
               readOnly: true
             - name: keto-namespaces
-              mountPath: /etc/config
+              mountPath: /etc/namespaces
               readOnly: true
           ports:
             - name: read
