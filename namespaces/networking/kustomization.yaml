@@ -6,4 +6,6 @@ namespace: networking
 resources:
   - namespace.yaml
   - traefik
-  - gateway.yaml
+  - gateway
+  - cert-manager
+  - certificate
