@@ -1,0 +1,4 @@
+resources:
+  - "../../namespaces/apps"
+  - "../../namespaces/iam"
+  - "../../namespaces/networking"
