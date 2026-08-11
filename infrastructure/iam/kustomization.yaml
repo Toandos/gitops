@@ -5,7 +5,6 @@ namespace: iam
 
 resources:
   - namespace.yaml
-  - accounts-ui
   - ory-kratos
   - ory-hydra
   - ory-keto
