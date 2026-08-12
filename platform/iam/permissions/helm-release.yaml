@@ -16,3 +16,4 @@ spec:
   valuesFrom:
     - kind: ConfigMap
       name: keto-values
+      valuesKey: values.yaml

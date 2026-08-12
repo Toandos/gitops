@@ -6,7 +6,7 @@ kratos:
       default_schema_id: default
       schemas:
         - id: default
-          url: file:///etc/config/kratos/identity.schema.json
+          url: file:///etc/config/identity.schema.json
 
     serve:
         public:
@@ -50,7 +50,7 @@ kratos:
         url: http://hydra:4445
 
   identitySchemas:
-    "identity.schema.json": |
+    "identity.schema.json": |-
       {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",

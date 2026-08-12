@@ -16,3 +16,4 @@ spec:
   valuesFrom:
     - kind: ConfigMap
       name: kratos-values
+      valuesKey: values.yaml

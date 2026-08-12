@@ -16,3 +16,4 @@ spec:
   valuesFrom:
     - kind: ConfigMap
       name: hydra-values
+      valuesKey: values.yaml
