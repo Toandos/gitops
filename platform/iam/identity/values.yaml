@@ -1,4 +1,7 @@
 kratos:
+  automigration:
+    enabled: true
+
   config:
     dsn: postgres://kratos:kratos_password@postgres.postgres:5432/kratos?sslmode=disable
 
