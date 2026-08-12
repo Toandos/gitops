@@ -1,6 +1,6 @@
 kratos:
   config:
-    dsn: postgres://kratos:kratos_password@postgres:5432/kratos?sslmode=disable
+    dsn: postgres://kratos:kratos_password@postgres.postgres:5432/kratos?sslmode=disable
 
     identity:
       default_schema_id: default
