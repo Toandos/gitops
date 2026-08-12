@@ -1,4 +1,4 @@
-hyra:
+hydra:
   automigration:
     enabled: true
   config:
