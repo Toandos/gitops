@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: flux-system
 
 resources:
-  - "sources.yaml"
-  - "platform.yaml"
-  - "products.yaml"
+  - headlamp.yaml
+  - jetstack.yaml
+  - ory.yaml
+  - traefik.yaml
