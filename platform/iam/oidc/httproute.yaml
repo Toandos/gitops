@@ -8,7 +8,7 @@ spec:
       namespace: networking
 
   hostnames:
-    - oauth.toando.de
+    - oidc.toando.de
 
   rules:
     - backendRefs:

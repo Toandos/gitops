@@ -22,6 +22,13 @@ spec:
           env:
             - name: DATABASE_URL
               value: postgres://dashboard:dashboard_password@postgres:5432/dashboard?sslmode=disable
+            - name: OIDC_SERVER_URL
+              value: https://oidc.toando.de
+            - name: OIDC_CLIENT_ID
+              value: dashboard
+            - name: OIDC_CLIENT_SECRET
+              value: "dashboard_secret"
+
           resources:
             requests:
               cpu: "100m"
