@@ -4,6 +4,4 @@ kind: Kustomization
 namespace: networking
 
 resources:
-  - cloudflare-api-token.yaml
-  - cluster-issuer.yaml
   - toando-de-certificate.yaml
