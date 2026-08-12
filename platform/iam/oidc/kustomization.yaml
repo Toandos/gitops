@@ -12,3 +12,6 @@ configMapGenerator:
   - name: hydra-values
     files:
       - values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
