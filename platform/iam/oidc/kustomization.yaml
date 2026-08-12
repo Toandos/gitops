@@ -5,13 +5,10 @@ namespace: oidc
 
 resources:
   - namespace.yaml
-  - init.yaml
-  - deployment.yaml
-  - service.yaml
+  - helm-release.yaml
   - httproute.yaml
 
 configMapGenerator:
-  - name: hydra-config
-    files: ["config/hydra.yaml"]
-  - name: hydra-init
-    files: ["init/init.sh"]
+  - name: hydra-values
+    files:
+      - values.yaml

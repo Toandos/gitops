@@ -5,11 +5,9 @@ namespace: permissions
 
 resources:
   - namespace.yaml
-  - deployment.yaml
-  - service.yaml
+  - helm-release.yaml
 
 configMapGenerator:
-  - name: keto-config
-    files: ["config/keto.yaml"]
-  - name: keto-namespaces
-    files: ["namespaces/example.ts"]
+  - name: keto-values
+    files:
+      - values.yaml

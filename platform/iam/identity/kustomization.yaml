@@ -5,11 +5,10 @@ namespace: identity
 
 resources:
   - namespace.yaml
-  - migration.yaml
-  - deployment.yaml
-  - service.yaml
+  - helm-release.yaml
   - httproute.yaml
 
 configMapGenerator:
-  - name: kratos-config
-    files: ["config/kratos.yaml", "config/identity.schema.json"]
+  - name: kratos-values
+    files:
+      - values.yaml

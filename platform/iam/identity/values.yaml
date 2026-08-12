@@ -1,0 +1,70 @@
+kratos:
+  config:
+    dsn: postgres://kratos:kratos_password@postgres:5432/kratos?sslmode=disable
+
+    serve:
+        public:
+            base_url: https://accounts.toando.de/api/
+            port: 4433
+        admin:
+            port: 4434
+
+    selfservice:
+        default_browser_return_url: https://accounts.toando.de
+        methods:
+            password:
+                enabled: false
+            passkey:
+                enabled: true
+                config:
+                    rp:
+                        display_name: Toando
+                        id: toando.de
+                        origins: ["https://accounts.toando.de"]
+        flows:
+            login:
+                ui_url: https://accounts.toando.de/login
+
+            registration:
+                ui_url: https://accounts.toando.de/registration
+
+            settings:
+                ui_url: https://accounts.toando.de/settings
+
+            recovery:
+                ui_url: https://accounts.toando.de/recovery
+
+            verification:
+                ui_url: https://accounts.toando.de/verification
+            
+            error:
+                ui_url: https://accounts.toando.de/error
+
+    oauth2_provider:
+        url: http://hydra:4445
+
+  identitySchemas:
+    default: |
+      {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "traits": {
+            "type": "object",
+            "properties": {
+              "username": {
+                "type": "string",
+                "ory.sh/kratos": {
+                  "credentials": {
+                    "password": {
+                      "identifier": true
+                    }
+                  }
+                }
+              }
+            },
+            "required": ["username"],
+            "additionalProperties": false
+          }
+        }
+      }
