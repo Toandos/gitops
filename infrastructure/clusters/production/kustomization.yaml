@@ -7,4 +7,3 @@ resources:
   - "sources.yaml"
   - "storage.yaml"
   - "platform.yaml"
-  - "products.yaml"
