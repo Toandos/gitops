@@ -4,7 +4,6 @@ kind: Kustomization
 namespace: flux-system
 
 resources:
-  - "sources.yaml"
-  - "storage.yaml"
-  - "platform.yaml"
-  - "products"
+  - accounts.yaml
+  - dashboard.yaml
+  - website.yaml
