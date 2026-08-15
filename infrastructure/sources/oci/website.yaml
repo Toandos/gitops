@@ -5,6 +5,8 @@ metadata:
 spec:
   interval: 5m
   url: oci://ghcr.io/toandos/charts/website
+  secretRef:
+    name: ghcr-secret
   ref:
     semver: ">=0.1.0"
   layerSelector:

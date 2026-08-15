@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: flux-system
 
 resources:
+  - ghcr-secret.yaml
   - accounts.yaml
   - dashboard.yaml
   - website.yaml
