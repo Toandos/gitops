@@ -5,8 +5,7 @@ metadata:
 spec:
   interval: 5m
   url: oci://ghcr.io/toandos/charts/dashboard
-  secretRef:
-    name: ghcr-secret
+  serviceAccountName: default
   ref:
     semver: ">=0.1.0"
   layerSelector:
