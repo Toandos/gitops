@@ -12,5 +12,5 @@ spec:
 
   rules:
     - backendRefs:
-        - name: ory-hydra
+        - name: hydra-public
           port: 4444
