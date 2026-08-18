@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Database
+metadata:
+  name: kratos
+spec:
+  cluster:
+    name: postgres
+  name: kratos
+  owner: kratos

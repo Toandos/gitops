@@ -5,10 +5,6 @@ namespace: postgres
 
 resources:
   - namespace.yaml
-  - deployment.yaml
-  - service.yaml
-  - pvc.yaml
-
-configMapGenerator:
-  - name: postgres-init
-    files: ["init/01-users.sql", "init/02-databases.sql"]
+  - helm-repository.yaml
+  - helm-release.yaml
+  - postgres-cluster.yaml

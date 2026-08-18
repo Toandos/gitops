@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: DatabaseRole
+metadata:
+  name: kratos
+spec:
+  cluster:
+    name: postgres
+  name: kratos
+  login: true
+  passwordSecret:
+    name: db-credentials

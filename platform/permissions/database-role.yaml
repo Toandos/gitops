@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: DatabaseRole
+metadata:
+  name: keto
+spec:
+  cluster:
+    name: postgres
+  name: keto
+  login: true
+  passwordSecret:
+    name: db-credentials

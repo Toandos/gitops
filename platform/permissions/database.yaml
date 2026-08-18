@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Database
+metadata:
+  name: keto
+spec:
+  cluster:
+    name: postgres
+  name: keto
+  owner: keto
