@@ -5,6 +5,4 @@ namespace: postgres
 
 resources:
   - namespace.yaml
-  - helm-repository.yaml
-  - helm-release.yaml
   - postgres-cluster.yaml
