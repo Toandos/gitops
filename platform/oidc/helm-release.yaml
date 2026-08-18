@@ -1,19 +1,19 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: kratos
+  name: hydra
 spec:
   interval: 30m
   chart:
     spec:
-      chart: kratos
+      chart: hydra
       version: "v0.63.0"
       sourceRef:
         kind: HelmRepository
         name: ory
-        namespace: iam-sources
-  
+        namespace: platform-sources
+
   valuesFrom:
     - kind: ConfigMap
-      name: kratos-values
+      name: hydra-values
       valuesKey: values.yaml

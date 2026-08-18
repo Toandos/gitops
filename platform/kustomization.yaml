@@ -4,6 +4,10 @@ kind: Kustomization
 resources:
   - cert-manager
   - headlamp
-  - iam
+  - identity
   - networking
+  - oidc
+  - permissions
+  - postgres
+  - sources
   - flux-kustomization.yaml
