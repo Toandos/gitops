@@ -5,4 +5,3 @@ resources:
   - accounts
   - dashboard
   - website
-  - flux-kustomization.yaml

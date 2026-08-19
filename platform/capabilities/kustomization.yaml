@@ -9,4 +9,3 @@ resources:
   - permissions
   - postgres
   - sources
-  - flux-kustomization.yaml
