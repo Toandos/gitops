@@ -3,7 +3,7 @@ kratos:
     enabled: true
 
   config:
-    dsn: postgres://kratos:lYkWF5F4e5ygpU7ny5asN4gq@postgres.postgres:5432/kratos?sslmode=disable
+    dsn: postgres://kratos:lYkWF5F4e5ygpU7ny5asN4gq@postgres-rw.postgres:5432/kratos?sslmode=disable
 
     identity:
       default_schema_id: default
