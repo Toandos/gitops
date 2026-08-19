@@ -3,5 +3,6 @@ kind: Kustomization
 
 resources:
   - infrastructure
-  - platform
+  - platform-capabilities
+  - platform-operators
   - products

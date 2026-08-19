@@ -28,5 +28,5 @@ spec:
     provider: github
     url: "https://github.com/Toandos/gitops.git"
     ref: "refs/heads/main"
-    path: "."
+    path: "./flux-system/kustomizations"
     pullSecret: flux-system
