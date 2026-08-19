@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - infrastructure
-  - platform-capabilities
-  - platform-operators
-  - products
+  - infrastructure.yaml
+  - platform-capabilities.yaml
+  - platform-operators.yaml 
+  - products.yaml
