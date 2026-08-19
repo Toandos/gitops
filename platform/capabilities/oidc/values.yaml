@@ -1,22 +1,22 @@
+deployment:
+  extraEnv:
+    - name: DSN
+      valueFrom:
+        secretKeyRef:
+          name: oidc-db-credentials
+          key: DSN
+
+job:
+  extraEnv:
+    - name: DSN
+      valueFrom:
+        secretKeyRef:
+          name: oidc-db-credentials
+          key: DSN
+
 hydra:
   automigration:
     enabled: true
-
-  deployment:
-    extraEnv:
-      - name: DSN
-        valueFrom:
-          secretKeyRef:
-            name: oidc-db-credentials
-            key: DSN
-
-  job:
-    extraEnv:
-      - name: DSN
-        valueFrom:
-          secretKeyRef:
-            name: oidc-db-credentials
-            key: DSN
 
   config:
     serve:

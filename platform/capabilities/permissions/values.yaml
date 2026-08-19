@@ -1,22 +1,22 @@
+deployment:
+  extraEnv:
+    - name: DSN
+      valueFrom:
+        secretKeyRef:
+          name: permissions-db-credentials
+          key: DSN
+
+job:
+  extraEnv:
+    - name: DSN
+      valueFrom:
+        secretKeyRef:
+          name: permissions-db-credentials
+          key: DSN
+
 keto:
   automigration:
     enabled: true
-
-  deployment:
-    extraEnv:
-      - name: DSN
-        valueFrom:
-          secretKeyRef:
-            name: permissions-db-credentials
-            key: DSN
-
-  job:
-    extraEnv:
-      - name: DSN
-        valueFrom:
-          secretKeyRef:
-            name: permissions-db-credentials
-            key: DSN
 
   config:
     serve:
