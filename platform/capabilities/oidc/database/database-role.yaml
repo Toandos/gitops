@@ -1,11 +1,11 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: DatabaseRole
 metadata:
-  name: keto
+  name: oidc-database-role
 spec:
   cluster:
     name: postgres
-  name: keto
+  name: oidc
   login: true
   passwordSecret:
-    name: db-credentials
+    name: oidc-db-credentials

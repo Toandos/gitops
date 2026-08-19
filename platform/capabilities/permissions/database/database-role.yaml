@@ -1,11 +1,11 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: DatabaseRole
 metadata:
-  name: hydra
+  name: permissions-database-role
 spec:
   cluster:
     name: postgres
-  name: hydra
+  name: permissions
   login: true
   passwordSecret:
-    name: db-credentials
+    name: permissions-db-credentials

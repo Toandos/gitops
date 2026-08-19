@@ -5,11 +5,9 @@ namespace: oidc
 
 resources:
   - namespace.yaml
+  - database
   - helm-release.yaml
   - httproute.yaml
-  - database-role.yaml
-  - database.yaml
-  - db-credentials.yaml
 
 configMapGenerator:
   - name: hydra-values

@@ -1,11 +1,11 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: DatabaseRole
 metadata:
-  name: kratos
+  name: identity-database-role
 spec:
   cluster:
     name: postgres
-  name: kratos
+  name: identity
   login: true
   passwordSecret:
-    name: db-credentials
+    name: identity-db-credentials

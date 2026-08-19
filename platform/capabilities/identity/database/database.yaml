@@ -1,9 +1,9 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: Database
 metadata:
-  name: hydra
+  name: identity-database
 spec:
   cluster:
     name: postgres
-  name: hydra
-  owner: hydra
+  name: identity
+  owner: identity

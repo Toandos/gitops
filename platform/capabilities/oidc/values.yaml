@@ -1,9 +1,24 @@
 hydra:
   automigration:
     enabled: true
-  config:
-    dsn: postgres://hydra:f5uD4ZLZEyTzI0k5ahVOp1YQ@postgres-rw.postgres:5432/hydra?sslmode=disable
 
+  deployment:
+    extraEnv:
+      - name: DSN
+        valueFrom:
+          secretKeyRef:
+            name: oidc-db-credentials
+            key: DSN
+
+  job:
+    extraEnv:
+      - name: DSN
+        valueFrom:
+          secretKeyRef:
+            name: oidc-db-credentials
+            key: DSN
+
+  config:
     serve:
         public:
             port: 4444

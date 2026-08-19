@@ -1,9 +1,9 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: Database
 metadata:
-  name: kratos
+  name: oidc-database
 spec:
   cluster:
     name: postgres
-  name: kratos
-  owner: kratos
+  name: oidc
+  owner: oidc

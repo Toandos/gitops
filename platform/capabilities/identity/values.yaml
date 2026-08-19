@@ -2,9 +2,23 @@ kratos:
   automigration:
     enabled: true
 
-  config:
-    dsn: postgres://kratos:lYkWF5F4e5ygpU7ny5asN4gq@postgres-rw.postgres:5432/kratos?sslmode=disable
+  deployment:
+    extraEnv:
+      - name: DSN
+        valueFrom:
+          secretKeyRef:
+            name: identity-db-credentials
+            key: DSN
 
+  job:
+    extraEnv:
+      - name: DSN
+        valueFrom:
+          secretKeyRef:
+            name: identity-db-credentials
+            key: DSN
+
+  config:
     identity:
       default_schema_id: default
       schemas:
