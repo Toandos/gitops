@@ -25,4 +25,4 @@ spec:
 
       backendRefs:
         - name: kratos-public
-          port: 4433
+          port: 80
