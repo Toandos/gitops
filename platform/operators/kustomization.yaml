@@ -5,3 +5,4 @@ resources:
   - cert-manager
   - cloudnative-pg
   - external-secrets
+  - kubernetes-replicator
