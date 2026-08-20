@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: oidc
+
+resources:
+  - helm-release.yaml
+  - httproute.yaml
+
+configMapGenerator:
+  - name: hydra-values
+    files:
+      - values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true

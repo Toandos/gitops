@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: permissions
+
+resources:
+  - helm-release.yaml
+
+configMapGenerator:
+  - name: keto-values
+    files:
+      - values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
