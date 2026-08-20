@@ -64,7 +64,7 @@ kratos:
                 ui_url: https://accounts.toando.de/error
 
     oauth2_provider:
-        url: http://hydra:4445
+        url: http://hydra-admin.oidc:4445
 
   identitySchemas:
     "identity.schema.json": |-
