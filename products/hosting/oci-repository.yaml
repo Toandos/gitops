@@ -1,10 +1,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
-  name: dashboard
+  name: hosting
 spec:
   interval: 5m
-  url: oci://ghcr.io/toandos/charts/dashboard
+  url: oci://ghcr.io/toandos/charts/hosting
   serviceAccountName: default
   ref:
     semver: ">=0.1.0"
