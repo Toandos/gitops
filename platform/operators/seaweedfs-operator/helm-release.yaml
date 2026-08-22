@@ -12,7 +12,8 @@ spec:
         kind: HelmRepository
         name: seaweedfs-operator
 
-    install:
-      crds: Create
-    upgrade:
-      crds: CreateReplace
+  install:
+    crds: Create
+    
+  upgrade:
+    crds: CreateReplace
