@@ -11,6 +11,6 @@ spec:
     - s3.toando.de
 
   rules:
-      backendRefs:
+    - backendRefs:
         - name: seaweed-s3
           port: 8333
