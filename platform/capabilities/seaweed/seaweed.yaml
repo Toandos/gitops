@@ -1,0 +1,16 @@
+apiVersion: seaweed.seaweedfs.com/v1
+kind: Seaweed
+metadata:
+  name: seaweed
+spec:
+  master:
+    replicas: 1
+
+  volume:
+    replicas: 1
+
+  filer:
+    replicas: 1
+
+  s3:
+    replicas: 1
