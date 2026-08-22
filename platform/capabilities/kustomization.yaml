@@ -8,4 +8,5 @@ resources:
   - oidc
   - permissions
   - postgres
+  - seaweedfs
   - sources

@@ -6,3 +6,4 @@ resources:
   - cloudnative-pg
   - external-secrets
   - kubernetes-replicator
+  - seaweedfs-operator
