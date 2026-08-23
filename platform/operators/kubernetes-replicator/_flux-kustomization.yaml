@@ -1,15 +1,15 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: products
+  name: kubernetes-replicator
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./products
+  path: ./operators/kubernetes-replicator
   prune: true
   wait: true
   dependsOn:
-    - name: platform-capabilities
+    - name: infrastructure
   sourceRef:
     kind: GitRepository
     name: flux-system

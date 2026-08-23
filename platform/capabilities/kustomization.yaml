@@ -2,11 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - headlamp
-  - identity
-  - networking
-  - oidc
-  - permissions
-  - postgres
-  - seaweedfs
-  - sources
+  - headlamp/_flux-kustomization.yaml
+  - identity/_flux-kustomization.yaml
+  - networking/_flux-kustomization.yaml
+  - oidc/_flux-kustomization.yaml
+  - permissions/_flux-kustomization.yaml
+  - postgres/_flux-kustomization.yaml
+  - product-resources/_flux-kustomization.yaml
+  - seaweedfs/_flux-kustomization.yaml
+  - sources/_flux-kustomization.yaml
