@@ -5,7 +5,5 @@ namespace: accounts
 
 resources:
   - namespace.yaml
-  - ghcr-secret.yaml
-  - service-account.yaml
   - oci-repository.yaml
   - helm-release.yaml

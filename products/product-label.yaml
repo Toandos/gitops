@@ -1,0 +1,10 @@
+apiVersion: builtin
+kind: LabelTransformer
+metadata:
+  name: product-label
+labels:
+  toando.de/product: "true"
+fieldSpecs:
+  - path: metadata/labels
+    create: true
+    kind: Namespace
