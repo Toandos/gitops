@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./operators/cloudnative-pg
+  path: ./platform/operators/cloudnative-pg
   prune: true
   wait: true
   dependsOn:

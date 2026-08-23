@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./operators/seaweedfs-operator
+  path: ./platform/operators/seaweedfs-operator
   prune: true
   wait: true
   dependsOn:

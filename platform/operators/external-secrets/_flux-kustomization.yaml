@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./operators/external-secrets
+  path: ./platform/operators/external-secrets
   prune: true
   wait: true
   dependsOn:

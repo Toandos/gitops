@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./operators/kubernetes-replicator
+  path: ./platform/operators/kubernetes-replicator
   prune: true
   wait: true
   dependsOn:
