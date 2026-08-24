@@ -1,11 +1,11 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: DatabaseRole
 metadata:
-  name: identity-database-role
+  name: accounts-database-role
 spec:
   cluster:
     name: postgres
-  name: identity
+  name: accounts
   login: true
   passwordSecret:
-    name: identity-db-credentials
+    name: accounts-db-credentials

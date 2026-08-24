@@ -3,7 +3,7 @@ deployment:
     - name: DSN
       valueFrom:
         secretKeyRef:
-          name: identity-db-credentials
+          name: accounts-db-credentials
           key: DSN
 
 job:
@@ -11,7 +11,7 @@ job:
     - name: DSN
       valueFrom:
         secretKeyRef:
-          name: identity-db-credentials
+          name: accounts-db-credentials
           key: DSN
 
 kratos:

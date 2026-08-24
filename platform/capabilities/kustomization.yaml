@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - headlamp/_flux-kustomization.yaml
-  - identity/_flux-kustomization.yaml
   - networking/_flux-kustomization.yaml
   - oidc/_flux-kustomization.yaml
   - permissions/_flux-kustomization.yaml
