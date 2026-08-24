@@ -9,7 +9,7 @@ spec:
   prune: true
   wait: true
   dependsOn:
-    - name: infrastructure
+    - name: cert-manager
   sourceRef:
     kind: GitRepository
     name: flux-system

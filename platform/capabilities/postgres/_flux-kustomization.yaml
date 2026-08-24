@@ -9,7 +9,7 @@ spec:
   prune: true
   wait: true
   dependsOn:
-    - name: infrastructure
+    - name: cloudnative-pg
   sourceRef:
     kind: GitRepository
     name: flux-system
