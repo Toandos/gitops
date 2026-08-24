@@ -8,6 +8,9 @@ spec:
 
   volume:
     replicas: 1
+    claims:
+      - name: data
+        request: 5Gi
 
   filer:
     replicas: 1
