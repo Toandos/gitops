@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: DatabaseRole
+metadata:
+  name: hosting-database-role
+spec:
+  cluster:
+    name: postgres
+  name: hosting
+  login: true
+  passwordSecret:
+    name: hosting-db-credentials
