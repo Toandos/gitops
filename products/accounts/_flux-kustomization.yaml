@@ -9,7 +9,8 @@ spec:
   prune: true
   wait: true
   dependsOn:
-    - name: product-resources
+    - name: oidc
+    - name: postgres
   sourceRef:
     kind: GitRepository
     name: flux-system

@@ -7,6 +7,5 @@ resources:
   - oidc/_flux-kustomization.yaml
   - permissions/_flux-kustomization.yaml
   - postgres/_flux-kustomization.yaml
-  - product-resources/_flux-kustomization.yaml
   - seaweedfs/_flux-kustomization.yaml
   - sources/_flux-kustomization.yaml
