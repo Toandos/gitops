@@ -7,3 +7,4 @@ resources:
   - external-secrets/_flux-kustomization.yaml
   - kubernetes-replicator/_flux-kustomization.yaml
   - seaweedfs-operator/_flux-kustomization.yaml
+  - stalwart-operator/_flux-kustomization.yaml
