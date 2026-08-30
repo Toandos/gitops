@@ -25,7 +25,6 @@ spec:
 
   sync:
     kind: GitRepository
-    provider: github
     url: "https://github.com/Toandos/gitops.git"
     ref: "refs/heads/main"
     path: "."
