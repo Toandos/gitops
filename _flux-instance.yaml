@@ -29,4 +29,3 @@ spec:
     url: "https://github.com/Toandos/gitops.git"
     ref: "refs/heads/main"
     path: "."
-    pullSecret: flux-system
