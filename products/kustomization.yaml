@@ -3,5 +3,6 @@ kind: Kustomization
 
 resources:
   - accounts/_flux-kustomization.yaml
+  - books/_flux-kustomization.yaml
   - hosting/_flux-kustomization.yaml
   - hub/_flux-kustomization.yaml
