@@ -5,4 +5,3 @@ resources:
   - accounts/_flux-kustomization.yaml
   - hosting/_flux-kustomization.yaml
   - hub/_flux-kustomization.yaml
-  - website/_flux-kustomization.yaml
