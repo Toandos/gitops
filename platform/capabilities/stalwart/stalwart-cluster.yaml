@@ -1,4 +1,4 @@
-apiVersion: postgresql.cnpg.io/v1
+apiVersion: stalwart.toando.de/v1alpha1
 kind: Cluster
 metadata:
   name: stalwart
