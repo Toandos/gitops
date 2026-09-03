@@ -3,4 +3,4 @@ kind: Cluster
 metadata:
   name: stalwart
 spec:
-  
+  instances: 1
