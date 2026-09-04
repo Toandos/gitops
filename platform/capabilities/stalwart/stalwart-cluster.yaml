@@ -4,3 +4,10 @@ metadata:
   name: stalwart
 spec:
   instances: 1
+  dataStore:
+    type: PostgreSql
+    postgresql:
+      host: postgres.postgres
+      database: stalwart
+      authUsername: stalwart
+      authSecret: stalwart_password
