@@ -1,0 +1,11 @@
+{
+  "@type": "PostgreSql",
+  "host": "postgres-rw.postgres",
+  "port": 5432,
+  "database": "mail",
+  "authUsername": "mail",
+  "authSecret": {
+    "@type": "EnvironmentVariable",
+    "variableName": "POSTGRES_PASSWORD"
+  }
+}

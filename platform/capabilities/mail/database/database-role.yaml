@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: DatabaseRole
+metadata:
+  name: mail-database-role
+spec:
+  cluster:
+    name: postgres
+  name: mail
+  login: true
+  passwordSecret:
+    name: mail-db-credentials
