@@ -4,7 +4,6 @@ kind: Kustomization
 namespace: mail
 
 resources:
-  - namespace.yaml
   - stalwart-cluster.yaml
 
 configMapGenerator:
