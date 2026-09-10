@@ -9,4 +9,4 @@ resources:
   - postgres/_flux-kustomization.yaml
   - seaweedfs/_flux-kustomization.yaml
   - sources/_flux-kustomization.yaml
-  - stalwart/_flux-kustomization.yaml
+  - mail/_flux-kustomization.yaml
