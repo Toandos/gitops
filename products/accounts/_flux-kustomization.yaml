@@ -9,6 +9,7 @@ spec:
   prune: true
   wait: true
   dependsOn:
+    - name: mail
     - name: oidc
     - name: postgres
   sourceRef:

@@ -1,0 +1,7 @@
+apiVersion: stalwart.toando.de/v1alpha1
+kind: Domain
+metadata:
+  name: accounts-mail-domain
+spec:
+  cluster:
+    name: stalwart
