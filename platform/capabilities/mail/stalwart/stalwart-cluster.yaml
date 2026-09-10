@@ -7,8 +7,8 @@ spec:
     name: stalwart-config
     key: config.json
   env:
-    name: POSTGRES_PASSWORD
-    valueFrom:
-      secretKeyRef:
-        name: mail-db-credentials
-        key: password
+    - name: POSTGRES_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: mail-db-credentials
+          key: password
