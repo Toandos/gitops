@@ -1,7 +1,17 @@
 apiVersion: stalwart.toando.de/v1alpha1
-kind: Account
+kind: JMAPObject
 metadata:
   name: accounts-mail-account
 spec:
-  cluster:
+  clusterRef:
     name: stalwart
+  type: Account
+  data:
+    "@type": User
+    name: noreply
+    roles: 
+      "@type": User
+    permissions:
+      "@type": Inherit
+    encryptionAtRest:
+      "@type": Disabled

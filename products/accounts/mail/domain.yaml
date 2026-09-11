@@ -1,7 +1,18 @@
 apiVersion: stalwart.toando.de/v1alpha1
-kind: Domain
+kind: JMAPObject
 metadata:
   name: accounts-mail-domain
 spec:
-  cluster:
+  clusterRef:
     name: stalwart
+  type: Domain
+  data:
+    name: accounts.toando.de
+    subAdressing:
+      "@type": Enabled
+    certificateManagement:
+      "@type": Manual
+    dkimManagement: 
+      "@type": Automatic
+    dnsManagement":
+      "@type": Manual
