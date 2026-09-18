@@ -1,17 +1,14 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: accounts
-  namespace: flux-system
+  name: hub-kustomization
 spec:
   interval: 10m
-  path: ./products/accounts
+  path: ./production
   prune: true
   wait: true
   dependsOn:
-    - name: mail
-    - name: oidc
-    - name: postgres
+    - name: infrastructure
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: hub-repository

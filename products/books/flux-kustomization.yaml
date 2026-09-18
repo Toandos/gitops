@@ -1,16 +1,14 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: hosting
-  namespace: flux-system
+  name: books-kustomization
 spec:
   interval: 10m
-  path: ./products/hosting
+  path: ./production
   prune: true
   wait: true
   dependsOn:
-    - name: oidc
-    - name: postgres
+    - name: infrastructure
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: books-repository

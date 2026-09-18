@@ -1,0 +1,9 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: books-repository
+spec:
+  interval: 5m
+  url: https://github.com/Toandos/books-gitops
+  ref:
+    branch: main

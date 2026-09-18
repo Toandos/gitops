@@ -1,0 +1,9 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: accounts-repository
+spec:
+  interval: 5m
+  url: https://github.com/Toandos/accounts-gitops
+  ref:
+    branch: main

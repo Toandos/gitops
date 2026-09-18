@@ -1,9 +1,0 @@
-apiVersion: postgresql.cnpg.io/v1
-kind: Database
-metadata:
-  name: accounts-database
-spec:
-  cluster:
-    name: postgres
-  name: accounts
-  owner: accounts
