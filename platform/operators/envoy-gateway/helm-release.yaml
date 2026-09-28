@@ -9,7 +9,12 @@ spec:
   chartRef:
     kind: OCIRepository
     name: envoy-gateway
+
+  install:
+    crds: Create
+
   upgrade:
+    crds: CreateReplace
     strategy:
       name: RetryOnFailure
       retryInterval: 5m
