@@ -3,7 +3,7 @@ kind: Gateway
 metadata:
   name: public-gateway
 spec:
-  gatewayClassName: traefik
+  gatewayClassName: envoy-gateway-class
 
   listeners:
     - name: https
