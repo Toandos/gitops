@@ -6,3 +6,9 @@ loadBalancer:
 bgpControlPlane:
   enabled: true
 rolloutCiliumPods: true
+envoy:
+  enabled: false
+ingressController:
+  enabled: false
+gatewayAPI:
+  enabled: false
