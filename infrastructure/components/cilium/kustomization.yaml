@@ -5,7 +5,7 @@ namespace: flux-system
 
 resources:
   - helm-release.yaml
-  - helm-repository.yaml
+  - oci-repository.yaml
 
 configMapGenerator:
   - name: cilium-values
