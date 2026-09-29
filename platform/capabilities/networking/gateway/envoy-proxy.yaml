@@ -6,6 +6,14 @@ spec:
   provider:
     type: Kubernetes
     kubernetes:
-      hostNetwork: true
       envoyService:
         type: ClusterIP
+      envoyDeployment:
+        patch:
+          type: StrategicMerge
+          value:
+            spec:
+              template:
+                spec:
+                  hostNetwork: true
+                  dnsPolicy: ClusterFirstWithHostNet
