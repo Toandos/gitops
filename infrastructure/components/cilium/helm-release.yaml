@@ -11,6 +11,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: cilium
+  targetNamespace: kube-system
   install:
     skipCRDs: false
   upgrade:
