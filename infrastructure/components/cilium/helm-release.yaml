@@ -4,11 +4,9 @@ metadata:
   name: cilium
 spec:
   interval: 30m
-  chart:
-    spec:
-      chartRef:
-        kind: OCIRepository
-        name: cilium
+  chartRef:
+    kind: OCIRepository
+    name: cilium
   targetNamespace: kube-system
   install:
     skipCRDs: false
