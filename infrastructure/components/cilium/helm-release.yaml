@@ -6,10 +6,8 @@ spec:
   interval: 30m
   chart:
     spec:
-      chart: cilium
-      version: "1.20.2"
-      sourceRef:
-        kind: HelmRepository
+      chartRef:
+        kind: OCIRepository
         name: cilium
   targetNamespace: kube-system
   install:
