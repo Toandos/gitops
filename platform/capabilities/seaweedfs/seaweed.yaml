@@ -3,6 +3,8 @@ kind: Seaweed
 metadata:
   name: seaweed
 spec:
+  image: chrislusf/seaweedfs:4.47
+
   master:
     replicas: 1
 
