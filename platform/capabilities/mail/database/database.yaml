@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Database
+metadata:
+  name: mail-database
+spec:
+  cluster:
+    name: postgres
+  name: mail
+  owner: mail

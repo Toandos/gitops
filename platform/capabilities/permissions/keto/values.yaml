@@ -1,0 +1,24 @@
+deployment:
+  extraEnv:
+    - name: DSN
+      valueFrom:
+        secretKeyRef:
+          name: permissions-db-credentials
+          key: DSN
+
+job:
+  extraEnv:
+    - name: DSN
+      valueFrom:
+        secretKeyRef:
+          name: permissions-db-credentials
+          key: DSN
+
+keto:
+  automigration:
+    enabled: true
+
+  config:
+    serve:
+        read:
+            port: 4466

@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: DatabaseRole
+metadata:
+  name: oidc-database-role
+spec:
+  cluster:
+    name: postgres
+  name: oidc
+  login: true
+  passwordSecret:
+    name: oidc-db-credentials

@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: DatabaseRole
+metadata:
+  name: permissions-database-role
+spec:
+  cluster:
+    name: postgres
+  name: permissions
+  login: true
+  passwordSecret:
+    name: permissions-db-credentials

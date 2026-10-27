@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Database
+metadata:
+  name: app-service-database
+spec:
+  cluster:
+    name: postgres
+  name: app-service
+  owner: app-service

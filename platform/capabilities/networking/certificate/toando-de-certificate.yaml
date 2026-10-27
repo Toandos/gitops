@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: toando-de-certificate
+spec:
+  secretName: toando-de-tls
+
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt
+
+  dnsNames:
+    - toando.de
+    - "*.toando.de"

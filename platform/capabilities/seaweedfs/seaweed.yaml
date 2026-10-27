@@ -1,0 +1,20 @@
+apiVersion: seaweed.seaweedfs.com/v1
+kind: Seaweed
+metadata:
+  name: seaweed
+spec:
+  image: chrislusf/seaweedfs:4.47
+
+  master:
+    replicas: 1
+
+  volume:
+    replicas: 1
+    requests:
+      storage: 10Gi
+
+  filer:
+    replicas: 1
+
+  s3:
+    replicas: 1
